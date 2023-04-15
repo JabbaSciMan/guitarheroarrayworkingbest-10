@@ -191,6 +191,9 @@ input.onButtonPressed(Button.A, function () {
         music.playTone(440, music.beat(BeatFraction.Half))
     }
 })
+input.onGesture(Gesture.Shake, function () {
+    basic.showIcon(IconNames.Heart)
+})
 let numCorrectHits = 0
 let Note3 = 0
 let range: neopixel.Strip = null
